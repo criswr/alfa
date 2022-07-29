@@ -79,15 +79,41 @@ p {
     padding-bottom: 5px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.05);
+    transition: transform 0.7s ease, color 0.7s;
 }
 
+.menu li:hover {
+    transition: transform 0.3s ease, color .3s;
+    transform: translateY(-5px);
+    color: rgba(46, 116, 116, 0.7);
+    }
+ 
 nav .menu__destacado {
     background-color: rgb(46, 116, 116);
     color: white;
 }
 
+nav .menu__destacado:hover {
+    transition: transform 0.3s ease, color .3s;
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+@keyframes logoRotacion {
+    0% { rotate: 0deg}
+    3% { rotate: 10deg; }
+    6% { rotate: -720deg; } 
+    10% { rotate: -720deg; }
+    100% { rotate: -720deg; }
+}
+
 .logo img{
     width: 70px;
+    transform: rotate(720deg);
+    animation-name: logoRotacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    animation-delay: 2s;
 }
 
 footer {
@@ -103,6 +129,11 @@ footer a {
     color: #fff;
 }
 
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
 footer li {
     list-style:none;
     display:inline-block;
@@ -114,15 +145,21 @@ footer li {
     text-transform: uppercase;
 }
 
-footer img{
+footer img {
     width: 30px;
     margin: 10px;
     margin-bottom: 0px;
     margin-top: 20px;
+    transition: transform 0.5s ease;
+}
+
+footer img:hover {
+    transform: rotate(-30deg);
+    transition: transform 0.5s ease;
 }
 
 .whatsapp {
-    right: 10px;
+    right: -70px;
     bottom: 10px;
     border-radius: 50px;
     background-color: rgba(46, 116, 116, 0.8);
@@ -133,6 +170,12 @@ footer img{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    transition: transform 0.1s ease;
+}
+
+.whatsapp:hover {
+    transform: translateX(-80px);
+    transition: transform 0.3s ease;
 }
 
 .whatsapp img {
@@ -178,6 +221,16 @@ footer img{
     overflow: hidden;
     display: flex;
     align-items: end;
+}
+
+.zoom {
+    transition: transform 0.9s ease, opacity 0.9s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
 }
 
 /* Exclusivo Portada */
