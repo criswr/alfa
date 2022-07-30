@@ -334,17 +334,48 @@ footer img:hover {
     margin-bottom: 1%;
     overflow: hidden;
     padding: 3%;
-    border-radius: 15px;
-    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 5%;
+    gap: 5px;
+    transition: all 0.8s ease;
+    background-color: #ececec;
+}
+
+.evento:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.3s ease;
+    background-color: #fff;
 }
 
 .evento__fecha {
     text-align: center;
     line-height: 15px;
+    max-width: 90px;
+    min-width: 90px;
+    margin-top: 8px;
+}
+
+.evento__columna {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.evento__detalles {
+
+    font-size: small;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.evento__detalles i{
+    color: rgb(46, 116, 116);
+}
+
+.evento__detalles li{
+    padding-bottom: 5px;
 }
 
 .evento__descripcion {
@@ -359,6 +390,26 @@ footer img:hover {
     background-color: #fff;
     width: 100px;
     padding-top: 3px;
+    border-color: #ececec;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.evento__obtener:hover {
+    background-color: rgb(46, 116, 116);
+    color: #fff;
+}
+
+.evento__fila1 {
+    display:flex;
+}
+
+.evento__fila2 {
+    width: 90%;
+}
+
+.mapa {
+    border-radius: 10px;
 }
 
 /* Exclusivo Tienda */
@@ -504,7 +555,7 @@ textarea {
     }
 
     .evento {
-        width: 80%;
+        width: 95%;
     }
 
     /* Tienda */
@@ -560,10 +611,17 @@ textarea {
 
     /* Eventos */
 
-    .evento {
+/*     .evento {
         flex-direction: column;
         gap: 15px;
         padding: 8%;
+    } */
+
+    .evento__fila1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 5%;
     }
 
     .tarjetas {
