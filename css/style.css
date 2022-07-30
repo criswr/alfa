@@ -339,7 +339,7 @@ footer img:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 5px;
+    gap: 10px;
     transition: all 0.8s ease;
     background-color: #ececec;
 }
@@ -415,7 +415,7 @@ footer img:hover {
 /* Exclusivo Tienda */
 
 .tituloPaginas__tienda {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(https://picsum.photos/id/1059/1200);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoTienda.jpg);
 }
 
 .productos {
@@ -561,7 +561,7 @@ textarea {
     /* Tienda */
 
     .tituloPaginas__tienda {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(https://picsum.photos/id/1059/1200);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoTienda.jpg);
     }
 
     .producto {
