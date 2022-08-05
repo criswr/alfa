@@ -15,56 +15,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido a Conocer a Alfa</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./images/iconoAlfa.png">
 </head>
 <body>
-    <div class="bodyDiv">
-        <header class="header">
-            <div class="logo">
-                <a href="#"><img src="./images/iconoAlfa.png" alt="Logo de Alfa"></a>
-            </div>
-            <div><nav class="menu">
-                <ul>
-                    <a href="#"><li>Inicio</li></a>
-                    <a href="./pages/acercade.html"><li>Sobre Alfa</li></a>
-                    <a href="./pages/eventos.html"><li>Eventos</li></a>
-                    <a href="./pages/tienda.html"><li>Tienda</li></a>
-                    <a href="./pages/unirse.html"><li class="menu__destacado">Unirse</li></a>
-                </ul>
-            </nav></div>
-        </header>
-        <main>
-            <section class="llamada llamada__index">
-                <div>
-                    <h1>La mirada de Alfa</h1>
-                    <p>Alfa está aquí para ofrecer felicidad, esperanza y ayuda a través de su mirada. La experiencia de observar su mirada es definida por muchos como simple, pero profunda en sus efectos validantes y enriquecedores en sus vidas.</p>
+    <div class="container-xxl shadow bg-dark">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light menu">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="#"><img src="./images/iconoAlfa.png" alt="Logo de Alfa"></a>
+                    </div>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills">
+                        <li class="nav-item">
+                        <a class="nav-link shadow active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="./pages/acercade.html">Sobre Alfa</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="./pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="./pages/unirse.html">Unirse</a>
+                        </li>
+                    </ul>
+                  </div>
                 </div>
+              </nav>
+        </header>
+        <main class="row bg-light">
+            <section class="container-fluid col-12 llamada llamada__index px-md-5">
+                <h1>La mirada de Alfa</h1>
+                <p>Alfa está aquí para ofrecer felicidad, esperanza y ayuda a través de su mirada. La experiencia de observar su mirada es definida por muchos como simple, pero profunda en sus efectos validantes y enriquecedores en sus vidas.</p>
             </section>
-            <section class="tarjetas tarjetaTamano">
-                <a href="./pages/acercade.html"><div class="tarjeta zoom">
-                    <img src="./images/indexAcercaDe.jpg" alt="Sobre Alfa">
-                    <div class="tarjeta__texto">
-                        <h2>¿Alfa?</h2>
-                        <p>Sumérgete y conoce a esta gata tan especial que generosamente nos comparte su mirada.</p>
+            <!-- Tarjetas -->
+            <section class="container p-5">
+                <div class="row gx-5">
+                    <div class="col-12 col-md-4 mb-5 mb-md-0 zoom">
+                        <a href="./pages/acercade.html"  class="card">
+                            <div>
+                                <img src="./images/indexAcercaDe.jpg" class="card-img-top" alt="Sobre Alfa">
+                                <div class="card-body">
+                                    <h2 class="card-text">¿Alfa?</h2>
+                                    <p class="card-text">Conoce a esta gata tan especial que generosamente nos comparte su mirada.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div></a>
-                <a href="./pages/eventos.html"><div class="tarjeta zoom">
-                    <img src="./images/indexEventos.jpg" alt="Eventos">
-                    <div class="tarjeta__texto">
-                        <h2>Streaming</h2>
-                        <p>Próximos eventos de Alfa también transmitidos en vivo, obtén tu ticket digital.</p>
+
+                    <div class="col-12 col-md-4 mb-5 mb-md-0 zoom">
+                        <a href="./pages/eventos.html" class="card">
+                            <div>
+                                <img src="./images/indexEventos.jpg" class="card-img-top" alt="Eventos">
+                                <div class="card-body">
+                                    <h2 class="card-text">Streaming</h2>
+                                    <p class="card-text">Próximos eventos de Alfa también transmitidos en vivo, obtén tu ticket digital.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div></a>
-                <a href="./pages/tienda.html"><div class="tarjeta zoom">
-                    <img src="./images/indexTienda.jpg" alt="Tienda">
-                    <div class="tarjeta__texto">
-                        <h2>Tienda</h2>
-                        <p>Alfa puede estar en tu casa! Pide ahora tu DVD, el libro de su biografía oficial, y más.</p>
-                    </div>
-                </div></a>
+
+                    <div class="col-12 col-md-4 mb-5 mb-md-0 zoom">
+                        <a href="./pages/tienda.html" class="card">
+                            <div>
+                                <img src="./images/indexTienda.jpg" class="card-img-top" alt="Tienda">
+                                <div class="card-body">
+                                    <h2 class="card-text">Tienda</h2>
+                                    <p class="card-text">Alfa puede estar en tu casa! Pide ahora tu DVD, el libro de su biografía oficial, y más.</p>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>   
+                </div>       
             </section>
-            <section class="parrafo">
+            
+            <section class="parrafo px-md-5">
                 <h2>Más información</h2>
                 <div class="contenidoPortada">
                     <p class="textoPortada">Los encuentros con la Mirada de Alfa se distinguen por <span class="textoDestacado">restaurar la esperanza y la paz en sus observadores</span>, permitiendo que la ayuda necesaria llegue sin esfuerzo y con generosidad.<br><br>Un agradecimiento especial se extiende a todos aquellos que apoyan sus encuentros en todo el mundo <span class="textoDestacado">contribuyendo a que Alfa pueda continuar su misión de manera gratuita para todos</span>, incluyendo para aquellos que no podrían participar y beneficiarse de otra manera. <br><br>La generosidad sin reservas esparce el amor por todas partes, <span class="textoDestacado">este es el camino de Alfa, y nuestro camino juntos</span>. Se aceptan también criptomonedas y Churu.
@@ -73,7 +107,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="row">
             <a href="#"><div class="whatsapp">
                 <img src="./images/socialWhatsapp.png" alt="WhatsApp">
                 <p>WhatsApp</p>
@@ -93,5 +127,6 @@
             <p>Copyright © 2022 - Desarrollado por <a href="https://plataforma.coderhouse.com/perfil/62a2393de4d35f001982f76a" target="_blank">Cristian</a></p>
         </footer>
     </div>
+    <script src="./js/bootstrap.bundle.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

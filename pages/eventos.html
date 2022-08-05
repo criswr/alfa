@@ -5,28 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Próximos Eventos</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/iconoAlfa.png">
-    <script src="https://kit.fontawesome.com/80554d58e5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="bodyDiv">
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html"><img src="../images/iconoAlfa.png" alt="Logo de Alfa" class="logo"></a>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <a href="../index.html"><li>Inicio</li></a>
-                    <a href="../pages/acercade.html"><li>Sobre Alfa</li></a>
-                    <a href="../pages/eventos.html"><li>Eventos</li></a>
-                    <a href="../pages/tienda.html"><li>Tienda</li></a>
-                    <a href="../pages/unirse.html"><li class="menu__destacado">Unirse</li></a>
-                </ul>
-            </nav>
+    <div class="container-xxl shadow bg-light">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light menu">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../images/iconoAlfa.png" alt="Logo de Alfa"></a>
+                    </div>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills">
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/acercade.html">Sobre Alfa</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light active" href="../pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/unirse.html">Unirse</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
-            <div class="tituloPaginas tituloPaginas__eventos"><h1>Próximos Eventos</h1></div>
+            <div class="row tituloPaginas tituloPaginas__eventos"><h1>Próximos Eventos</h1></div>
             <h2 class="parrafo">Eventos Presenciales</h2>
             <div class="eventos">
                 <div class="evento">
@@ -45,9 +62,7 @@
                             <p>Visita presencial de Alfa, sesión de observación de su mirada, exposición de testimonios.
                             </p>
                         </div>
-                        <a href="#"><div class="evento__obtener">
-                            <h3>Obtener</h3>
-                        </div></a>
+                        <a href="#"><button type="button" class="btn btn-outline-secondary">Obtener</button></a>
                     </div>
                     <div class="evento__fila2">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3860106529623!2d-70.64196918480091!3d-33.43924838077721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59b6ee5a887%3A0x43a746bfa98d9592!2sCentro%20Gabriela%20Mistral!5e0!3m2!1ses-419!2scl!4v1659198141042!5m2!1ses-419!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
@@ -69,9 +84,7 @@
                             <p>Visita presencial de Alfa, sesión de observación de su mirada, exposición de testimonios.
                             </p>
                         </div>
-                        <a href="#"><div class="evento__obtener">
-                            <h3>Obtener</h3>
-                        </div></a>
+                        <a href="#"><button type="button" class="btn btn-outline-secondary">Obtener</button></a>
                     </div>
                     <div class="evento__fila2">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26757.988400535676!2d-71.63603632564808!3d-33.03675450015299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d7de7ffb77%3A0x967153a52be9cc17!2sBiblioteca%20P%C3%BAblica%20Santiago%20Sever%C3%ADn!5e0!3m2!1ses-419!2scl!4v1659200236454!5m2!1ses-419!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
@@ -93,9 +106,7 @@
                             <p>Visita presencial de Alfa, sesión de observación de su mirada, exposición de testimonios.
                             </p>
                         </div>
-                        <a href="#"><div class="evento__obtener">
-                            <h3>Obtener</h3>
-                        </div></a>
+                        <a href="#"><button type="button" class="btn btn-outline-secondary">Obtener</button></a>
                     </div>
                     <div class="evento__fila2">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55325.86516373255!2d-71.33906816875003!3d-29.925743199999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca3c867f2c8f%3A0xe34152be4cfca4dc!2sCentro%20De%20Eventos%20La%20Granja!5e0!3m2!1ses-419!2scl!4v1659200397076!5m2!1ses-419!2scl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
@@ -120,14 +131,12 @@
                             <p>Transmisión en vivo de la Mirada de Alfa, exposición de testimonios.
                             </p>
                         </div>
-                        <a href="#"><div class="evento__obtener">
-                            <h3>Enlace</h3>
-                        </div></a>
+                        <a href="#"><button type="button" class="btn btn-outline-secondary">Enlace</button></a>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="row">
             <a href="#"><div class="whatsapp">
                 <img src="../images/socialWhatsapp.png" alt="WhatsApp">
                 <p>WhatsApp</p>
@@ -147,5 +156,7 @@
             <p>Copyright © 2022 - Desarrollado por <a href="https://plataforma.coderhouse.com/perfil/62a2393de4d35f001982f76a" target="_blank">Cristian</a></p>
         </footer>
     </div>
+    <script src="../js/bootstrap.bundle.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80554d58e5.js" crossorigin="anonymous"></script>
 </body>
 </html>

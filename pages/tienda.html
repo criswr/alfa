@@ -4,85 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/iconoAlfa.png">
     <title>Tienda</title>
 </head>
 <body>
-    <div class="bodyDiv">
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html"><img src="../images/iconoAlfa.png" alt="Logo de Alfa" class="logo"></a>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <a href="../index.html"><li>Inicio</li></a>
-                    <a href="../pages/acercade.html"><li>Sobre Alfa</li></a>
-                    <a href="../pages/eventos.html"><li>Eventos</li></a>
-                    <a href="../pages/tienda.html"><li>Tienda</li></a>
-                    <a href="../pages/unirse.html"><li class="menu__destacado">Unirse</li></a>
-                </ul>
-            </nav>
+    <div class="container-xxl shadow bg-light">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light menu">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../images/iconoAlfa.png" alt="Logo de Alfa"></a>
+                    </div>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills">
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/acercade.html">Sobre Alfa</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light active" href="../pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/unirse.html">Unirse</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
-            <div class="tituloPaginas tituloPaginas__tienda"><h1>Tienda</h1></div>
-            <section class="parrafo">
-                <h2>Libros</h2>
-                <div class="productos">
-                    <div class="producto zoom">
-                        <img src="../images/mockupLibroAutobiografia.jpg" alt="Libro">
-                        <h4>Autobiografía de una mirada</h4>
-                        <p>Libro biográfico de Alfa. Desde sus inicios hasta su vida como guía espiritual.</p>
+            <div class="row tituloPaginas tituloPaginas__tienda"><h1>Tienda</h1></div>
+            <div class="container p-0 p-sm-2 p-md-4">
+                <h2 class="pt-4 pt-sm-0">Libros</h2>
+
+                <section class="row g-3">
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupLibroAutobiografia.jpg" class="card-img-top" alt="Libro Autobiografía de Una Mirada">
+                            <div class="card-body">
+                                <h4 class="card-title">Autobiografía de una mirada</h4>
+                                <p class="card-text">Libro biográfico de Alfa. Desde sus inicios hasta su vida como guía espiritual.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="producto zoom">
-                        <img src="../images/mockupLibroMensajes.jpg" alt="Libro">
-                        <h4>Mensajes desde el silencio</h4>
-                        <p>Una guía práctica para sentarse en silencio, observar el vacío y dormir hecho bolita.</p>
+                    
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupLibroMensajes.jpg" class="card-img-top" alt="Libro Mensajes desde el silencio">
+                            <div class="card-body">
+                                <h4 class="card-title">Mensajes desde el silencio</h4>
+                                <p class="card-text">Una guía práctica para sentarse en silencio, observar el vacío y dormir hecho bolita.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="producto zoom">
-                        <img src="../images/mockupLibroIlustrada.jpg" alt="Libro">
-                        <h4>Alfa Ilustrada</h4>
-                        <p>Didácticas historias con ilustraciones para educar a tus hijos en el camino de Alfa.</p>
+                    
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupLibroIlustrada.jpg" class="card-img-top" alt="Libro Alfa Ilustrada">
+                            <div class="card-body">
+                                <h4 class="card-title">Alfa Ilustrada</h4>
+                                <p class="card-text">Didácticas historias con ilustraciones para educar a tus hijos en el camino de Alfa.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </secton>
-            <section>
-                <h2>DVD</h2>
-                <div class="productos">
-                    <div class="producto zoom">
-                        <img src="../images/mockupDvdIndia.jpg" alt="Libro">
-                        <h4>Alfa en la India</h4>
-                        <p>Recorrido turístico protagonizado por Alfa a través de los 108 ríos sagrados de India.</p>
+                </section>
+
+                <h2 class="pt-4">DVD</h2>
+                <section class="row g-3">
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupDvdIndia.jpg" class="card-img-top" alt="DVD Alfa en la India">
+                            <div class="card-body">
+                                <h4 class="card-title">Alfa en la India</h4>
+                                <p class="card-text">Recorrido turístico protagonizado por Alfa a través de los 108 ríos sagrados de India.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="producto zoom">
-                        <img src="../images/mockupDvdAbrazo.jpg" alt="Libro">
-                        <h4>El Abrazo Invisible</h4>
-                        <p>Largometraje donde Alfa mira directamente a la cámara durante 90 minutos.</p>
+                    
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupDvdAbrazo.jpg" class="card-img-top" alt="DVD El Abrazo Invisible">
+                            <div class="card-body">
+                                <h4 class="card-title">El Abrazo Invisible</h4>
+                                <p class="card-text">Largometraje donde Alfa mira directamente a la cámara durante 90 minutos.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </secton>
-            <section>
-                <h2>Audio</h2>
-                <div class="productos">
-                    <div class="producto zoom">
-                        <img src="../images/mockupCdGracias.jpg" alt="Libro">
-                        <h4>Gracias, Alfa</h4>
-                        <p>Música original de varios artistas inspiradas por la obra de Alfa, en variados estilos musicales.</p>
+                </section>
+                
+                <h2 class="pt-4">Audio</h2>
+                <section class="row g-3">
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupCdGracias.jpg" class="card-img-top" alt="CD Gracias, Alfa">
+                            <div class="card-body">
+                                <h4 class="card-title">Gracias, Alfa</h4>
+                                <p class="card-text">Música original de varios artistas inspiradas por la obra de Alfa, en variados estilos musicales.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="producto zoom">
-                        <img src="../images/mockupCdAutobiografia.jpg" alt="Libro">
-                        <h4>Autobiografía de una mirada</h4>
-                        <p>Audiolibro biográfico de Alfa. Narrando desde sus inicios hasta su vida como guía espiritual.</p>
+                    
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupCdAutobiografia.jpg" class="card-img-top" alt="CD Autobiografía de una mirada">
+                            <div class="card-body">
+                                <h4 class="card-title">Autobiografía de una mirada</h4>
+                                <p class="card-text">Audiolibro biográfico de Alfa. Narrando desde sus inicios hasta su vida como guía espiritual.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="producto zoom">
-                        <img src="../images/mockupCdMeditacion.jpg" alt="Libro">
-                        <h4>Meditación</h4>
-                        <p>Sonido ambiental relajante para complementar la meditación al observar la Mirada de Alfa.</p>
+                    
+                    <div class="col-12 col-lg-4 col-sm-6">
+                        <div class="card tarjetaProductoPadre">
+                            <img src="../images/mockupCdMeditacion.jpg" class="card-img-top" alt="CD Meditación">
+                            <div class="card-body">
+                                <h4 class="card-title">Alfa Ilustrada</h4>
+                                <p class="card-text">Sonido ambiental relajante para complementar la meditación al observar la Mirada de Alfa.</p>
+                                <a href="#" class="btn btn-primary position-absolute top-50 start-50 translate-middle tarjetaProductoHijo"><i class="fa-solid fa-cart-shopping fa-2xs"></i> Agregar</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </secton>
+                </section>
+            </div>
+
         </main>
-        <footer>
+        <footer class="row">
             <a href="#"><div class="whatsapp">
                 <img src="../images/socialWhatsapp.png" alt="WhatsApp">
                 <p>WhatsApp</p>
@@ -102,5 +165,7 @@
             <p>Copyright © 2022 - Desarrollado por <a href="https://plataforma.coderhouse.com/perfil/62a2393de4d35f001982f76a" target="_blank">Cristian</a></p>
         </footer>
     </div>
+    <script src="../js/bootstrap.bundle.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80554d58e5.js" crossorigin="anonymous"></script>
 </body>
 </html>

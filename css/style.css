@@ -6,18 +6,63 @@
     box-sizing: border-box;
 }
 
+/* Bootstap */
+
+a {
+    color: rgb(46, 116, 116) !important;
+    text-decoration: none !important;
+  }
+
+a:hover {
+    color: rgb(46, 116, 116) !important;
+  }
+
+.nav-link.active {
+    color: white !important;
+    background-color: rgb(46, 116, 116) !important;
+}
+
+.nav-link {
+    padding: 15px !important;
+    padding-top: 6px !important;
+    padding-bottom: 4px !important;
+}
+
+.btn-outline-secondary {
+    color: rgb(46, 116, 116) !important;
+    border-color: rgb(46, 116, 116) !important;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 1.5rem !important;
+  }
+
+.btn-outline-secondary:hover {
+    color: #fff !important;
+    background-color: rgb(46, 116, 116) !important;
+    border-color: rgb(46, 116, 116) !important;
+}
+
+.btn-primary {
+    color: white !important;
+    border-color: rgb(46, 116, 116) !important;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 1.5rem !important;
+    background-color: rgb(46, 116, 116) !important;
+  }
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: rgb(46, 116, 116) !important;
+    border-color: rgb(46, 116, 116) !important;
+}
+
+/* General */
+
 body {
     color: rgb(53, 53, 53);
-    display: flex;
-    justify-content: center;
     background-image: linear-gradient(to top, #c7e7e7,  #f6f6f6);
     background-attachment: fixed;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(46, 116, 116);
-}
 
 h1 {
     font-family: 'Bebas Neue', cursive;
@@ -44,58 +89,11 @@ p {
     font-family: 'Albert Sans', sans-serif;
 }
 
-.bodyDiv {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1500px;
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    box-shadow: 0px 0px 44px 0px rgba(0,0,0,0.3);
-    background-color: rgb(248, 248, 248);
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    padding: 20px;
-    z-index: 10;
-}
-
 .menu li{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.2rem;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    margin-left: 7px;
-    padding: 15px;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.05);
-    transition: transform 0.7s ease, color 0.7s;
-}
-
-.menu li:hover {
-    transition: transform 0.3s ease, color .3s;
-    transform: translateY(-5px);
-    color: rgba(46, 116, 116, 0.7);
-    }
- 
-nav .menu__destacado {
-    background-color: rgb(46, 116, 116);
-    color: white;
-}
-
-nav .menu__destacado:hover {
-    transition: transform 0.3s ease, color .3s;
-    color: rgba(255, 255, 255, 0.7); 
+    font-family: 'Bebas Neue', cursive ;
+    font-size: 1.2rem ;
+    padding: 4px ;
+    text-align: center ;
 }
 
 @keyframes logoRotacion {
@@ -120,18 +118,19 @@ footer {
     text-align: center;
     font-size: 0.7rem;
     padding-top: 10px;
-    line-height: 35px;
+    line-height: 15px;
     background-color: rgb(46, 116, 116);
     color: #fff;
 }
 
 footer a {
-    color: #fff;
+    color: #fff !important;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    text-decoration: underline !important;
+    text-decoration-style: dotted !important;
+    color: #fff !important;
 }
 
 footer li {
@@ -148,8 +147,8 @@ footer li {
 footer img {
     width: 30px;
     margin: 10px;
-    margin-bottom: 0px;
     margin-top: 20px;
+    margin-bottom: 17px;
     transition: transform 0.5s ease;
 }
 
@@ -185,6 +184,8 @@ footer img:hover {
 .whatsapp p {
     font-weight: bolder;
     font-size: 0.8rem;
+    position: relative;
+    top: 8px;
 }
 
 .whatsappFooter {
@@ -220,7 +221,8 @@ footer img:hover {
     font-size: 1.6rem;
     overflow: hidden;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .zoom {
@@ -237,27 +239,7 @@ footer img:hover {
 
 .llamada__index {
     background-image: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%), url(../images/fondoLlamada.jpg);
-    margin-top: -120px;
-}
-
-.tarjetas {
-    padding: 35px;
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
-}
-
-.tarjetaTamano > * {
-    flex: 1;
-}
-
-.tarjeta img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.tarjeta__texto {
-    padding: 10px;
+    margin-top: -120px !important;
 }
 
 .contenidoPortada {
@@ -352,9 +334,9 @@ footer img:hover {
 
 .evento__fecha {
     text-align: center;
-    line-height: 15px;
-    max-width: 90px;
-    min-width: 90px;
+    line-height: 0px;
+    max-width: 100px;
+    min-width: 100px;
     margin-top: 8px;
 }
 
@@ -375,7 +357,7 @@ footer img:hover {
 }
 
 .evento__detalles li{
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 
 .evento__descripcion {
@@ -384,21 +366,6 @@ footer img:hover {
     padding-right: 3%;
 }
 
-.evento__obtener {
-    text-align: center;
-    border-radius: 5px;
-    background-color: #fff;
-    width: 100px;
-    padding-top: 3px;
-    border-color: #ececec;
-    border-style: solid;
-    border-width: 2px;
-}
-
-.evento__obtener:hover {
-    background-color: rgb(46, 116, 116);
-    color: #fff;
-}
 
 .evento__fila1 {
     display:flex;
@@ -418,33 +385,25 @@ footer img:hover {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoTienda.jpg);
 }
 
-.productos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+.tarjetaProductoHijo {
+    display: none ;
+    opacity: 0 ;
+    transition: opacity 0.5s ease;
 }
 
-.producto {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: #fff;
-    border-radius: 15px;
+.tarjetaProductoPadre:hover .tarjetaProductoHijo {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
-.producto img {
-    border-radius: 15px;
-    width: 100%;
+.tarjetaProductoPadre:hover .card-img-top {
+    opacity: 0.5;
+    transition: opacity 0.1s ease;
 }
 
-.producto p, h4 {
-    padding-left: 10px;
+.card-img-top {
+    transition: opacity 0.5s ease;
 }
 
 /* Exclusivo Unirse */
@@ -453,72 +412,11 @@ footer img:hover {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 80%), url(../images/fondoUnirse.jpg);
 }
 
-.formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.formImagen {
+.formImagenBs {
     background-image: url(../images/alfaFormulario.jpg);
     background-size: cover;
-    height: 520px;
-    width: 300px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.formUnirse {
-    background-color: rgb(228, 228, 228);
-    height: 520px;
-    width: 250px;
-    text-align: left;
-    vertical-align: top;
-    padding: 20px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.responsabilidad {
-    background-color: rgb(240, 240, 240);
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 80%;
-    padding: 40px;
-}
-
-/* Formularuio */
-
-input, select, textarea {
-    margin: 5px;
-    border: none;
-    background: rgb(247, 247, 247);
-    border-radius: 5px;
-    padding: 10px;
-    font-family: 'Albert Sans', sans-serif;
-    color: rgb(59, 59, 59);
-  }
-
-label, legend {
-    font-family: 'Albert Sans', sans-serif; 
-    margin: 5px;
-    padding: 10px;
-    color: rgb(59, 59, 59);
-}
-
-textarea {
-    height: 80px;
-    width: 200px;
-}
-
-.formEnviar {
-    background-color: rgb(46, 116, 116);
-    color: #fff;
+    min-height: 400px;
+    border-radius: 10px;
 }
 
 /* Media Querys */
@@ -564,10 +462,6 @@ textarea {
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoTienda.jpg);
     }
 
-    .producto {
-        width: 40%;
-    }
-
     /* Unirse */
 
     .tituloPaginas__unirse {
@@ -576,14 +470,6 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-    .header {
-        justify-content: space-around;
-    }
-
-    .menu li {
-        display: block;
-        margin-bottom: 10px;
-    }
 
     footer li {
         font-size: 0.7rem;
@@ -609,28 +495,17 @@ textarea {
         margin-top: 0;
     }
 
-    /* Eventos */
+    .alfaPortada {
+        display: none;
+    }
 
-/*     .evento {
-        flex-direction: column;
-        gap: 15px;
-        padding: 8%;
-    } */
+    /* Eventos */
 
     .evento__fila1 {
         flex-direction: column;
         align-items: center;
         gap: 10px;
         padding: 5%;
-    }
-
-    .tarjetas {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .alfaPortada {
-        display: none;
     }
 
     /* Acerca De */
@@ -640,33 +515,4 @@ textarea {
         margin-left: 3%;
     }
 
-    /* Tienda */
-
-    .producto {
-        width: 90%;
-    }
-
-    /* Unirse */
-
-    .formulario {
-        flex-direction: column-reverse;
-    }
-    
-    .formImagen {
-        width: 94%;
-        height: 400px;
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 15px;
-        background-position: center;
-    }
-
-    .formUnirse {
-        width: 94%;
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 15px;
-    }
-
-    .responsabilidad {
-        width: 94%;
-    }
 }

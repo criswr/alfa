@@ -4,29 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/iconoAlfa.png">
     <title>Sobre Alfa</title>
 </head>
 <body>
-    <div class="bodyDiv">
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html"><img src="../images/iconoAlfa.png" alt="Logo de Alfa" class="logo"></a>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <a href="../index.html"><li>Inicio</li></a>
-                    <a href="../pages/acercade.html"><li>Sobre Alfa</li></a>
-                    <a href="../pages/eventos.html"><li>Eventos</li></a>
-                    <a href="../pages/tienda.html"><li>Tienda</li></a>
-                    <a href="../pages/unirse.html"><li class="menu__destacado">Unirse</li></a>
-                </ul>
-            </nav>
+    <div class="container-xxl shadow bg-light">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light menu">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../images/iconoAlfa.png" alt="Logo de Alfa"></a>
+                    </div>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills">
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light active" href="../pages/acercade.html">Sobre Alfa</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link shadow bg-light" href="../pages/unirse.html">Unirse</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
-            <div class="tituloPaginas tituloPaginas__acercaDe"><h1>Acerca de Alfa</h1></div>
-            <p class="parrafo">Alfa nació en 2020 en Santiago de Chile. Sufrió el abandono poco despúes, pero fue rescatada prontamente. Fue esta traumatizante experiencia la que la impulsó a compartir su don con el mundo. <span class="textoDestacado">Ella no toca a nadie, ni produce sonidos, solamente los observa con su Mirada</span>. Personas de todas partes la empezaron a visitar, las cuales fueron observadas por Alfa una a una en sus reuniones. Cuando la cantidad de gente que llegaba fue mucha, empezó a realizar observaciones por grupos. <span class="textoDestacado">Actualmente Alfa realiza giras por distintos países ofreciendo eventos masivos en paralelo a transmisiones online en vivo, para que la mayor cantidad de gente pueda beneficiarse</span>.
+            <div class="row tituloPaginas tituloPaginas__acercaDe"><h1>Acerca de Alfa</h1></div>
+            <p class="parrafo px-md-5">Alfa nació en 2020 en Santiago de Chile. Sufrió el abandono poco despúes, pero fue rescatada prontamente. Fue esta traumatizante experiencia la que la impulsó a compartir su don con el mundo. <span class="textoDestacado">Ella no toca a nadie, ni produce sonidos, solamente los observa con su Mirada</span>. Personas de todas partes la empezaron a visitar, las cuales fueron observadas por Alfa una a una en sus reuniones. Cuando la cantidad de gente que llegaba fue mucha, empezó a realizar observaciones por grupos. <span class="textoDestacado">Actualmente Alfa realiza giras por distintos países ofreciendo eventos masivos en paralelo a transmisiones online en vivo, para que la mayor cantidad de gente pueda beneficiarse</span>.
             <br><br>
             <span class="textoDestacado">Sus seguidores, autodenominados como "Betas"</span>, hablan de beneficios inexplicables luego de observar la Mirada de Alfa, ya sea en persona o a través de medios digitales. Si bien ella nunca ha indicado ser una sanadora, los Betas se refieren a estos beneficios en diversas áreas como <span class="textoDestacado">la salud, mejoras laborales, reconciliaciones amorosas, suerte en el azar o en inversiones, recuperación de adicciones, etc.</span></p>
             <div class="parrafo">
@@ -59,7 +77,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="row">
             <a href="#"><div class="whatsapp">
                 <img src="../images/socialWhatsapp.png" alt="WhatsApp">
                 <p>WhatsApp</p>
@@ -79,5 +97,6 @@
             <p>Copyright © 2022 - Desarrollado por <a href="https://plataforma.coderhouse.com/perfil/62a2393de4d35f001982f76a" target="_blank">Cristian</a></p>
         </footer>
     </div>
+    <script src="../js/bootstrap.bundle.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
