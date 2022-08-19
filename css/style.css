@@ -143,9 +143,12 @@ footer {
 .parrafo {
   padding: 3%; }
 
+.textoBold, .textoDestacado {
+  font-weight: bold;
+  font-family: "Albert Sans", sans-serif; }
+
 .textoDestacado {
-  color: #2e7474;
-  font-weight: bold; }
+  color: #2e7474; }
 
 .centrar {
   text-align: center; }
@@ -171,32 +174,16 @@ footer {
 
 /* Exclusivo Portada */
 .llamada__index {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../images/fondoLlamada.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../images/fondoLlamada1320.jpg);
   margin-top: -120px !important; }
-
-.contenidoPortada {
-  padding-top: 0;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 10%; }
-
-.alfaPortada {
-  height: 300px;
-  margin-right: 10%;
-  transform: translateY(-10%); }
-
-.textoPortada {
-  margin-top: 20px;
-  margin-left: 10%; }
 
 /* Exclusivo Acerca De */
 .tituloPaginas__acercaDe {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoAcercaDe.jpg); }
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoAcercaDe1320.jpg); }
 
 /* Exclusivo Eventos */
 .tituloPaginas__eventos {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url(../images/fondoEventos.jpg); }
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoEventos1320.jpg); }
 
 .evento {
   transition: all 0.8s ease;
@@ -227,7 +214,7 @@ footer {
 
 /* Exclusivo Tienda */
 .tituloPaginas__tienda {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url(../images/fondoTienda.jpg); }
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoTienda1320.jpg); }
 
 .tarjetaProductoHijo {
   display: none;
@@ -248,7 +235,7 @@ footer {
 
 /* Exclusivo Unirse */
 .tituloPaginas__unirse {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0) 80%), url(../images/fondoUnirse.jpg); }
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoUnirse1320.jpg); }
 
 .formImagenBs {
   background-image: url(../images/alfaFormulario.jpg);
@@ -258,6 +245,8 @@ footer {
 
 /* Media Querys */
 @media screen and (max-width: 1024px) {
+  .llamada__index {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../images/fondoLlamada1024.jpg); }
   .llamada {
     font-size: 1.4rem; }
   /* Portada */
@@ -268,16 +257,16 @@ footer {
     margin-left: 0; }
   /* Acerca De */
   .tituloPaginas__acercaDe {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoAcercaDe.jpg); }
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoAcercaDe1024.jpg); }
   /* Eventos */
   .tituloPaginas__eventos {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url(../images/fondoEventos.jpg); }
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoEventos1024.jpg); }
   /* Tienda */
   .tituloPaginas__tienda {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0) 60%), url(../images/fondoTienda.jpg); }
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoTienda1024.jpg); }
   /* Unirse */
   .tituloPaginas__unirse {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0) 80%), url(../images/fondoUnirse.jpg); } }
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoUnirse1024.jpg); } }
 
 @media screen and (max-width: 600px) {
   .tituloPaginas {
@@ -294,6 +283,18 @@ footer {
     display: initial; }
   /* Portada */
   .llamada__index {
-    margin-top: 0; }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../images/fondoLlamada600.jpg); }
   .alfaPortada {
-    display: none; } }
+    display: none; }
+  /* Acerca De */
+  .tituloPaginas__acercaDe {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoAcercaDe600.jpg); }
+  /* Eventos */
+  .tituloPaginas__eventos {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoEventos600.jpg); }
+  /* Tienda */
+  .tituloPaginas__tienda {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoTienda600.jpg); }
+  /* Unirse */
+  .tituloPaginas__unirse {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url(../images/fondoUnirse600.jpg); } }

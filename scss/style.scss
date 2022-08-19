@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Bebas+Neue&display=swap');
 @import "variables.scss";
-
+@import "maps.scss";
+@import "mixins.scss";
 
 
 * {
@@ -197,9 +198,14 @@ footer {
     padding: 3%;
 }
 
-.textoDestacado {
-    color: $colorPrincipal;
+.textoBold {
     font-weight: bold;
+    font-family: $fuenteParrafos;
+}
+
+.textoDestacado {
+    @extend .textoBold;
+    color: $colorPrincipal;
 }
 
 .centrar {
@@ -232,39 +238,20 @@ footer {
 /* Exclusivo Portada */
 
 .llamada__index {
-    background-image: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%), url(../images/fondoLlamada.jpg);
+    @include bgLlamada(map-get($bgImgTitulo, index1320));
     margin-top: -120px !important;
-}
-
-.contenidoPortada {
-    padding-top: 0;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
-}
-
-.alfaPortada {
-    height: 300px;
-    margin-right: 10%;
-    transform: translateY(-10%);
-}
-
-.textoPortada {
-    margin-top: 20px;
-    margin-left: 10%;
 }
 
 /* Exclusivo Acerca De */
 
 .tituloPaginas__acercaDe {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(0,0,0,0) 50%), url(../images/fondoAcercaDe.jpg);
+    @include bgTitulo(right, map-get($bgImgTitulo, acercaDe1320));
 }
 
 /* Exclusivo Eventos */
 
 .tituloPaginas__eventos {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoEventos.jpg);
+    @include bgTitulo(right, map-get($bgImgTitulo, eventos1320));
 }
 
 .evento {
@@ -308,7 +295,7 @@ footer {
 /* Exclusivo Tienda */
 
 .tituloPaginas__tienda {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoTienda.jpg);
+    @include bgTitulo(right, map-get($bgImgTitulo, tienda1320));
 }
 
 .tarjetaProductoHijo {
@@ -338,7 +325,7 @@ footer {
 /* Exclusivo Unirse */
 
 .tituloPaginas__unirse {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 80%), url(../images/fondoUnirse.jpg);
+    @include bgTitulo(right, map-get($bgImgTitulo, unirse1320));
 }
 
 .formImagenBs {
@@ -351,6 +338,10 @@ footer {
 /* Media Querys */
 
 @media screen and (max-width: 1024px) {
+    .llamada__index {
+        @include bgLlamada(map-get($bgImgTitulo, index1024));
+    }
+
     .llamada {
         font-size: 1.4rem;
     }
@@ -368,28 +359,27 @@ footer {
     /* Acerca De */
 
     .tituloPaginas__acercaDe {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(0,0,0,0) 50%), url(../images/fondoAcercaDe.jpg);
+        @include bgTitulo(bottom, map-get($bgImgTitulo, acercaDe1024));
     }
-
-
 
     /* Eventos */
 
     .tituloPaginas__eventos {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoEventos.jpg);
+        @include bgTitulo(bottom, map-get($bgImgTitulo, eventos1024));
     }
 
     /* Tienda */
 
     .tituloPaginas__tienda {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 60%), url(../images/fondoTienda.jpg);
+        @include bgTitulo(bottom, map-get($bgImgTitulo, tienda1024));
     }
 
     /* Unirse */
 
     .tituloPaginas__unirse {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0,0,0,0) 80%), url(../images/fondoUnirse.jpg);
+        @include bgTitulo(bottom, map-get($bgImgTitulo, unirse1024));
     }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -422,11 +412,33 @@ footer {
     /* Portada */
 
     .llamada__index {
-        margin-top: 0;
+        @include bgLlamada(map-get($bgImgTitulo, index600));
     }
 
     .alfaPortada {
         display: none;
     }
 
-}
+/* Acerca De */
+
+    .tituloPaginas__acercaDe {
+        @include bgTitulo(bottom, map-get($bgImgTitulo, acercaDe600));
+    }
+    /* Eventos */
+
+    .tituloPaginas__eventos {
+        @include bgTitulo(bottom, map-get($bgImgTitulo, eventos600));
+    }
+
+    /* Tienda */
+
+    .tituloPaginas__tienda {
+        @include bgTitulo(bottom, map-get($bgImgTitulo, tienda600));
+    }
+
+    /* Unirse */
+
+    .tituloPaginas__unirse {
+        @include bgTitulo(bottom, map-get($bgImgTitulo, unirse600));
+        }
+    }
