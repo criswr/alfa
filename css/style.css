@@ -28,26 +28,40 @@ a {
       background-color: #265f5f !important;
       box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2) !important; }
 
-.btn-outline-secondary {
+.botonCortina {
   color: #2e7474 !important;
   border-color: #2e7474 !important;
-  font-family: "Bebas Neue", cursive !important;
-  font-size: 1.5rem !important; }
-  .btn-outline-secondary:hover {
-    color: #fff !important;
-    background-color: #2e7474 !important;
-    border-color: #2e7474 !important; }
-
-.btn-primary {
-  color: white !important;
-  border-color: #2e7474 !important;
+  border-width: 3px !important;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.7) !important;
   font-family: "Bebas Neue", cursive !important;
   font-size: 1.5rem !important;
-  background-color: #2e7474 !important; }
-  .btn-primary:hover {
-    color: #fff !important;
-    background-color: #2e7474 !important;
-    border-color: #2e7474 !important; }
+  position: relative;
+  overflow: hidden;
+  transition: all .35s;
+  display: block;
+  z-index: 1 !important;
+  transition: all .35s; }
+  .botonCortina:hover {
+    color: #fff !important; }
+  .botonCortina::before, .botonCortina::after {
+    position: absolute !important;
+    content: "";
+    width: 100% !important;
+    height: 100% !important;
+    top: -50px !important;
+    left: 0 !important;
+    background: #2e7474 !important;
+    z-index: -1 !important;
+    transition: all .35s !important; }
+  .botonCortina::before {
+    opacity: 0.5 !important; }
+  .botonCortina::after {
+    transition-delay: .2s !important;
+    transform: rotate(0deg) !important;
+    opacity: 1 !important; }
+  .botonCortina:hover::before, .botonCortina:hover::after {
+    top: 0 !important; }
 
 .form-control:focus {
   border-color: rgba(46, 116, 116, 0.6);
@@ -106,8 +120,6 @@ footer {
   footer a {
     color: #fff !important; }
     footer a:hover {
-      text-decoration: underline !important;
-      text-decoration-style: dotted !important;
       color: #fff !important; }
   footer li {
     list-style: none;
@@ -117,7 +129,25 @@ footer {
     font-family: "Albert Sans", sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative; }
+    footer li::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      opacity: 0.2;
+      content: '.';
+      color: transparent;
+      background: white;
+      height: 1px;
+      transition: all .2s ease; }
+    footer li:hover::after {
+      width: 80%;
+      opacity: 1;
+      transition: all .2s ease; }
   footer img {
     width: 30px;
     margin: 10px;
@@ -159,7 +189,8 @@ footer {
   height: 400px;
   background-position: center;
   background-size: cover;
-  padding: 3%; }
+  padding: 3%;
+  text-shadow: 1px 1px 10px white; }
 
 .parrafo {
   padding: 3%; }
@@ -196,7 +227,8 @@ footer {
 /* Exclusivo Portada */
 .llamada__index {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../images/fondoLlamada1320.jpg);
-  margin-top: -120px !important; }
+  margin-top: -120px !important;
+  text-shadow: 1px 1px 10px black; }
 
 /* Exclusivo Acerca De */
 .tituloPaginas__acercaDe {
@@ -263,6 +295,36 @@ footer {
   background-size: cover;
   min-height: 400px;
   border-radius: 10px; }
+
+.hoverUnirse {
+  transition: all 0.2s ease 0s;
+  width: 120px;
+  height: 53px;
+  position: relative;
+  color: white;
+  border-color: #2e7474 !important;
+  border-width: 3px !important;
+  background: #2e7474 !important;
+  font-family: "Bebas Neue", cursive !important;
+  font-size: 1.5rem !important; }
+  .hoverUnirse::before {
+    content: '\f061';
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s ease 0s; }
+  .hoverUnirse:hover {
+    text-indent: -20px; }
+    .hoverUnirse:hover::before {
+      opacity: 1; }
 
 /* Media Querys */
 @media screen and (max-width: 1024px) {
